@@ -16,7 +16,7 @@ int Priority(char c) {
     return -1;
 }
 std::string infx2pstfx(std::string inf) {
-   std::string post;
+  std::string post;
   TStack<char, 100> stack1;
   for (char c : inf) {
     if (Priority(c) == -1) {
